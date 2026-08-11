@@ -6,7 +6,7 @@ export function Footer() {
           <span className="h-2 w-2 rounded-full bg-accent" />
           Nosh
         </div>
-        <p>Made with Love <3</p>
+        <p>Made with Love {"<3"}</p>
         <p>© {new Date().getFullYear()} Nosh</p>
       </div>
     </footer>

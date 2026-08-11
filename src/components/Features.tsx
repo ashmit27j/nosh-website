@@ -11,39 +11,39 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: <Zap size={24} />,
-    title: "Fluid Parkour",
+    title: "Instant Meal Plans",
     description:
-      "Wall runs, slides, mantles, and aerial combos keep momentum at the center of every encounter.",
+      "Build a full week of meals in seconds, tailored to your goals, tastes, and schedule.",
   },
   {
     icon: <Target size={24} />,
-    title: "Arena Combat",
+    title: "Nutrition Targets",
     description:
-      "Fast time-to-kill gunplay tuned for skill expression, map control, and clutch plays.",
+      "Track calories and macros automatically, with clear targets you can actually hit.",
   },
   {
     icon: <Layers size={24} />,
-    title: "Unity Powered",
+    title: "Smart Grocery Lists",
     description:
-      "Built from the ground up in Unity with custom movement systems and polished feedback.",
+      "Every plan turns into an organized shopping list, grouped by aisle and free of waste.",
   },
   {
     icon: <Users size={24} />,
-    title: "Multiplayer Modes",
+    title: "Plan Together",
     description:
-      "Competitive and casual modes designed for quick rounds and high replayability.",
+      "Share plans with family or roommates so everyone eats well without the daily debate.",
   },
   {
     icon: <Map size={24} />,
-    title: "Varied Environments",
+    title: "Recipes You'll Love",
     description:
-      "Levels that reward verticality and route knowledge, from tight corridors to open rooftops.",
+      "A growing library of simple recipes that adapt to what is already in your kitchen.",
   },
   {
     icon: <Cpu size={24} />,
-    title: "Performance First",
+    title: "Fast and Offline",
     description:
-      "Optimized rendering and netcode so the action stays smooth under pressure.",
+      "A lightweight app that stays quick and keeps your plans available wherever you are.",
   },
 ];
 
@@ -81,7 +81,7 @@ export function Features() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-4 text-muted-foreground"
           >
-            Everything that makes the game tick — from movement to multiplayer.
+            Everything that makes meal planning effortless — from ideas to groceries.
           </motion.p>
         </div>
 
