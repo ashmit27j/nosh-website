@@ -37,7 +37,7 @@ export function Navbar() {
           className="flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-[0.28em] text-foreground"
         >
           <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(195, 255, 0,0.7)]" />
-          Death Penalty
+          Nosh
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">
