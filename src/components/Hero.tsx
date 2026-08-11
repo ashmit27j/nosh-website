@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const EXE_DOWNLOAD = "#";
-const UNITY_CLOUD = "#";
+const APK_DOWNLOAD = "#";
+const GITHUB_URL = "#";
 const PLACEHOLDER_VIDEO = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -53,7 +53,7 @@ export function Hero() {
       >
         <motion.div variants={item} className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-muted-foreground">
           <span className="h-px w-8 bg-accent" />
-          A Unity Parkour FPS
+          A Smarter Way to Plan Your Meals
           <span className="h-px w-8 bg-accent" />
         </motion.div>
 
@@ -61,15 +61,14 @@ export function Hero() {
           variants={item}
           className="font-display text-6xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-[9rem] leading-[0.9]"
         >
-          DEATH
-          <span className="block text-accent">PENALTY</span>
+          Nosh
         </motion.h1>
 
         <motion.p
           variants={item}
           className="mt-8 max-w-xl text-base text-muted-foreground sm:text-lg"
         >
-          Fast-paced first-person parkour shooter built in Unity.
+          A smarter way to plan your meals.
         </motion.p>
 
         {/* Video */}
@@ -77,7 +76,7 @@ export function Hero() {
           variants={item}
           className="mt-16 w-full max-w-5xl"
         >
-          <div className="relative overflow-hidden rounded-xl border border-border bg-card shadow-[0_30px_120px_-30px_rgba(255,176,0,0.25)]">
+          <div className="relative overflow-hidden rounded-xl border border-border bg-card shadow-[0_30px_120px_-30px_rgba(195, 255, 0,0.25)]">
             <div className="aspect-video w-full">
               <video
                 className="h-full w-full object-cover"
@@ -93,17 +92,17 @@ export function Hero() {
 
         <motion.div variants={item} className="mt-12 flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href={EXE_DOWNLOAD}
+            href={APK_DOWNLOAD}
             className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-md bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent-foreground transition-transform hover:scale-[1.02] active:scale-100 sm:w-auto"
           >
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-            Download Game
+            Download App
           </a>
           <a
-            href={UNITY_CLOUD}
+            href={GITHUB_URL}
             className="inline-flex w-full items-center justify-center rounded-md border border-border bg-transparent px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-foreground transition-colors hover:border-accent/60 hover:text-accent sm:w-auto"
           >
-            Unity Cloud Project
+            View on Github
           </a>
         </motion.div>
       </motion.div>
