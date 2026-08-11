@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Download, Cloud } from "lucide-react";
+import { Smartphone, Apple } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
@@ -13,36 +13,35 @@ import { InteractiveGrid } from "@/components/InteractiveGrid";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Death Penalty — Fast-Paced Parkour FPS" },
+      { title: "Nosh — A Smarter Way to Plan Your Meals" },
       {
         name: "description",
         content:
-          "Death Penalty — a fast-paced first-person parkour shooter built in Unity. Download the game and explore the Unity Cloud project.",
+          "Nosh is a smarter way to plan your meals — build weekly plans, hit your nutrition targets, and get an organized grocery list. Download the APK or IPA.",
       },
       { name: "theme-color", content: "#070707" },
-      { property: "og:title", content: "Death Penalty — Fast-Paced Parkour FPS" },
+      { property: "og:title", content: "Nosh — A Smarter Way to Plan Your Meals" },
       {
         property: "og:description",
-        content: "A fast-paced first-person parkour shooter built in Unity.",
+        content: "A smarter way to plan your meals.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Death Penalty" },
-      { name: "twitter:description", content: "Fast-paced first-person parkour shooter built in Unity." },
+      { name: "twitter:title", content: "Nosh" },
+      { name: "twitter:description", content: "A smarter way to plan your meals." },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
   component: LandingPage,
 });
 
-const EXE_DOWNLOAD = "#";
-const UNITY_CLOUD = "#";
+const APK_DOWNLOAD = "#";
+const IPA_DOWNLOAD = "#";
 
 const developers: Developer[] = [
   { name: "Ashmit Jain", role: "Gameplay Programming • Systems • UI", github: "#", linkedin: "#" },
   { name: "Sukhada Gulhane", role: "Game Design • Programming", github: "#", linkedin: "#" },
-  { name: "Neerav Reddy", role: "Programming", github: "#", linkedin: "#" },
 ];
 
 function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
@@ -91,19 +90,19 @@ function LandingPage() {
           <div className="grid gap-6 md:grid-cols-2">
             <DownloadCard
               index={0}
-              title="Windows Build"
-              description="Download the latest Windows executable of Death Penalty."
-              buttonLabel="Download .exe"
-              href={EXE_DOWNLOAD}
-              icon={<Download size={20} />}
+              title="Android — APK"
+              description="Download the latest Nosh APK for Android devices."
+              buttonLabel="Download APK"
+              href={APK_DOWNLOAD}
+              icon={<Smartphone size={20} />}
             />
             <DownloadCard
               index={1}
-              title="Unity Project"
-              description="Access the Unity Cloud project."
-              buttonLabel="Open Unity Cloud"
-              href={UNITY_CLOUD}
-              icon={<Cloud size={20} />}
+              title="iOS — IPA"
+              description="Download the latest Nosh IPA for iOS devices."
+              buttonLabel="Download IPA"
+              href={IPA_DOWNLOAD}
+              icon={<Apple size={20} />}
             />
           </div>
         </div>
