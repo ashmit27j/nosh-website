@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Download, Cloud } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { Features } from "@/components/Features";
 import { DownloadCard } from "@/components/DownloadCard";
 import { DeveloperCard, type Developer } from "@/components/DeveloperCard";
 import { Footer } from "@/components/Footer";
@@ -80,6 +81,8 @@ function LandingPage() {
         <Navbar />
 
         <Hero />
+
+        <Features />
 
       {/* Downloads */}
       <section id="downloads" className="relative border-t border-border py-28 sm:py-36">
