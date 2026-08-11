@@ -21,7 +21,7 @@
   --card: #131313;
   --foreground: #ffffff;
   --muted-foreground: #a0a0a0;
-  --accent: #FFB000;
+  --accent: #C3FF00;
   --accent-foreground: #0a0a0a;
   --border: rgba(255, 255, 255, 0.08);
 }
@@ -85,11 +85,11 @@ body {
 /* Accent-colored grid used as the "energized" layer under a radial mask */
 .bg-graph-accent {
   background-image:
-    linear-gradient(to right, rgba(255, 176, 0, 0.55) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 176, 0, 0.55) 1px, transparent 1px);
+    linear-gradient(to right, rgba(195, 255, 0, 0.55) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(195, 255, 0, 0.55) 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: -1px -1px;
-  filter: drop-shadow(0 0 6px rgba(255, 176, 0, 0.45));
+  filter: drop-shadow(0 0 6px rgba(195, 255, 0, 0.45));
 }
 
 /* Faint noise */

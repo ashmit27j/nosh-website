@@ -94,7 +94,7 @@ export function Features() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: index * 0.08, ease: EASE }}
               whileHover={{ y: -6 }}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_30px_60px_-30px_rgba(255,176,0,0.25)]"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card p-8 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_30px_60px_-30px_rgba(195, 255, 0,0.25)]"
             >
               <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-transparent" />
