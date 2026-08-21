@@ -49,19 +49,20 @@ body {
   color: #fff;
 }
 
-/* Custom scrollbar */
+/* Hide scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
+  height: 0px;
 }
-::-webkit-scrollbar-track {
-  background: #070707;
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-::-webkit-scrollbar-thumb {
-  background: #1f1f1f;
-  border-radius: 8px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #2a2a2a;
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* Industrial grid pattern */
