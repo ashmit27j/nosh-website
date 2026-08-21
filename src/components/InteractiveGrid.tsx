@@ -128,8 +128,11 @@ export function InteractiveGrid() {
       <div className="absolute inset-0 bg-graph" />
 
       {/* Energized grid: small masked window that follows the cursor.
-          The inner grid counter-translates so lines stay viewport-locked. */
-          className="hidden md:block"}
+          The inner grid counter-translates so lines stay viewport-locked.
+          Hidden on mobile to keep the page calm on small screens. */}
+      <div
+        ref={maskRef}
+        className="absolute left-0 top-0 hidden overflow-hidden opacity-0 transition-opacity duration-300 will-change-transform md:block"
         style={{
           width: SIZE,
           height: SIZE,
