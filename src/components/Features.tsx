@@ -101,7 +101,7 @@ export function Features() {
               </div>
 
               <div className="relative">
-                <div className="mb-6 inline-flex items-center justify-center rounded-md border border-border bg-[#0c0c0c] p-3 text-accent">
+                <div className="mb-6 hidden sm:inline-flex items-center justify-center rounded-md border border-border bg-[#0c0c0c] p-3 text-accent">
                   {feature.icon}
                 </div>
                 <h3 className="font-display text-xl font-semibold tracking-tight text-foreground">

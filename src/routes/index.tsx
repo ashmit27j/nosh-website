@@ -40,8 +40,8 @@ const APK_DOWNLOAD = "#";
 const IPA_DOWNLOAD = "#";
 
 const developers: Developer[] = [
-  { name: "Ashmit Jain", role: "Gameplay Programming • Systems • UI", github: "#", linkedin: "#" },
-  { name: "Sukhada Gulhane", role: "Game Design • Programming", github: "#", linkedin: "#" },
+  { name: "Ashmit Jain", role: "Gameplay Programming • Systems • UI", link: "https://linktr.ee/ashmit27j" },
+  { name: "Sukhada Gulhane", role: "Game Design • Programming", link: "https://linktr.ee/ashmit27j" },
 ];
 
 function SectionHeader({ eyebrow, title }: { eyebrow: string; title: string }) {
@@ -112,7 +112,7 @@ function LandingPage() {
         <section id="developers" className="relative border-t border-border py-28 sm:py-36">
           <div className="relative mx-auto max-w-6xl px-6 lg:px-10">
             <SectionHeader eyebrow="The Team" title="Developers" />
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-wrap justify-center gap-6">
               {developers.map((dev, i) => (
                 <DeveloperCard key={dev.name} dev={dev} index={i} />
               ))}

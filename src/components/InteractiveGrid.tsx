@@ -128,10 +128,11 @@ export function InteractiveGrid() {
       <div className="absolute inset-0 bg-graph" />
 
       {/* Energized grid: small masked window that follows the cursor.
-          The inner grid counter-translates so lines stay viewport-locked. */}
+          The inner grid counter-translates so lines stay viewport-locked.
+          Hidden on mobile to keep the page calm on small screens. */}
       <div
         ref={maskRef}
-        className="absolute left-0 top-0 overflow-hidden opacity-0 transition-opacity duration-300 will-change-transform"
+        className="absolute left-0 top-0 hidden overflow-hidden opacity-0 transition-opacity duration-300 will-change-transform md:block"
         style={{
           width: SIZE,
           height: SIZE,
@@ -151,7 +152,7 @@ export function InteractiveGrid() {
       {/* Soft bloom halo that follows the cursor */}
       <div
         ref={glowRef}
-        className="absolute left-0 top-0 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 will-change-transform"
+        className="absolute left-0 top-0 hidden h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 will-change-transform md:block"
         style={{
           background:
             "radial-gradient(circle, rgba(195, 255, 0,0.18) 0%, rgba(195, 255, 0,0.08) 25%, rgba(195, 255, 0,0) 65%)",

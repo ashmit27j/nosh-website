@@ -68,7 +68,9 @@ export function Hero() {
           variants={item}
           className="mt-8 max-w-xl text-base text-muted-foreground sm:text-lg"
         >
-          A smarter way to plan your meals.
+          Aesthetic meals, organized schedules, and zero last-minute panic.
+          <br />
+          Why wait? Nosh Now
         </motion.p>
 
         {/* Video */}
@@ -107,15 +109,6 @@ export function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* scroll cue */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-muted-foreground"
-      >
-        Scroll
-      </motion.div>
     </section>
   );
 }
